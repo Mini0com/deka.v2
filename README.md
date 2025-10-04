@@ -21,7 +21,7 @@ sed -i -e 's/3.5m/3.7m/g' Makefile
 
 make
 
-#usage 
+# usage:
 
 sudo paplon-portforwarding.py 
 
