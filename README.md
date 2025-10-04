@@ -11,7 +11,9 @@ sudo apt install python3.7 python3.7-dev nvidia-utils-515-server xserver-xorg-vi
 
 sudo python3.7 -m pip install pyopencl numpy scipy
 
-cd deka
+git clone https://github.com/Mini0com/deka.v2
+
+cd deka.v2
 
 ./genkernel64.sh > slice.c
 
@@ -19,3 +21,14 @@ sed -i -e 's/3.5m/3.7m/g' Makefile
 
 make
 
+#usage 
+
+sudo paplon-portforwarding.py 
+
+sudo python3.7 oclvankus.py
+
+sudo ./delta_client.py
+
+sudo openvpn (configuration file portmap) 
+
+sudo telnet (ip portmap) (port portmap)
